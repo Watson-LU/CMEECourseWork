@@ -15,19 +15,24 @@ The practice runs with the basic commands, all installations are stored in the c
 ## Project stucture and Usage
 The project contains two parts. The first part contains practice works during the class. The second part display the answer codes of thw whole week1 practices.
 The first part is ignored. The second part is divided as FASTA exercise, Shell script and LaTeX practice.                                                                         1.In the FASTA exercise, there are 5 questions, files are stored in data directory (407228326.fasta, 407228412.fasta, E.coli.fasta):  
+    
     Q1: the CountLines.sh script is used to cover the question. 
+    
     Q2:  print as below:
     ```bash
      tail -n +2 filename
     ```
+    
     Q3: print as below:
     ```bash
     tail -n +2 filename |tr -d '\n' | wc -c
     ```
+    
     Q4:print as below:
     ```bash
     grep -o "ATGC" filename |wc -l
     ```
+    
     Q5:use variables to refer and store caculated values: for example
     ```bash
     AA= `grep -o "A" filename |wc -l`
@@ -37,7 +42,9 @@ The first part is ignored. The second part is divided as FASTA exercise, Shell s
     AT = $(ex[r $AA +$TT])
     ```
     ultemately, caculate the ratio in decimals use awk command:
+    ```bash
     ratio=$(echo | awk "{print $AT/%GC}") 
+    ```
 
 2.In the shell script practice, the temperature txt files (1800.csv , 1801.csv , 1802.csv, 1803.csv) should be bashed by csvtospace.sh script as below:
     ```bash
@@ -53,6 +60,7 @@ Finished.
 
 ## Author name and Contact
 Author name: Jintao Lu
+
 Contact: jl8722@ic.ac.uk
 
 
