@@ -1,0 +1,66 @@
+#0 Download the files from remote repositories
+    cd Documents/CMEECourseWork/week1/data  #direct to the route  
+
+    # download files from remote repositories
+    wget https://raw.githubusercontent.com/mhasoba/TheMulQuaBio/master/content/data/fasta/407228326.fasta
+    wget https://raw.githubusercontent.com/mhasoba/TheMulQuaBio/master/content/data/fasta/407228412.fasta
+    wget https://raw.githubusercontent.com/mhasoba/TheMulQuaBio/master/content/data/fasta/E.coli.fasta
+
+
+#1 to scount how many lines there are in each file
+    
+    #create the CountLines.sh scripts 
+    cd Documents/CMEECourseWork/week1/code
+    touch countlines.sh
+    code countlines.sh
+    
+    #create the shell scrtip in the CountLines.sh file
+
+    #!/bin/bash
+    linesnumber= 'wc -l <$1'                     # use commmand 'wc -l' to acount the line numbers of file $1 then store in linesnumber
+    echo " the file $1 has $linesnumber lines"   # fill with results in the strings
+    echo                                      
+    
+    # operate the shell script with bash commmand
+    cd Documents/CMEECourseWork/week1/code
+    bash  CountLines.sh ../data/407228326.fasta
+    bash  CountLines.sh ../data/407228412.fasta
+    bash  CountLines.sh ../data/E.coli.fasta
+
+
+#2 to print everything starting from the second line for the E.coli genome
+
+    cd Documents/CMEECourseWork/week1/data
+    tail -n +2 E.coli.fasta   # command 'tail -n' to print last few lines of a file, +2 means all lines except the first line
+
+
+#3 to count the sequence length of this genome
+
+    cd Documents/CMEECourseWork/week1/data
+    tail -n +2 E.coli.fasta |tr -d '\n' | wc -c   # command 'tail -n +2' to print all the sequence of this genome, 'tr -d '\n'' to delete the line break at the end of each line, 'wc -c' to count number of bytes, use | to set commond from left to right.
+
+
+#4 to count the matches of a particular sequence,  "ATGC"
+
+    cd Documents/CMEECourseWork/week1/data
+    grep -o "ATGC" E.coli.fasta |wc -l  # use command 'grep -o 'to position repeated ATGC in one line, use 'wc -l' to count number
+    
+    
+#5 to compute the AT/GC ratio
+
+
+cd Documents/CMEECourseWork/week1/data
+
+AA=`grep -o "A" E.coli.fasta |wc -l`    # use command 'grep -o 'to position repeated words in one line, use 'wc -l' to count number
+TT=`grep -o 'T' E.coli.fasta |wc -l`    
+GG=`grep -o 'G' E.coli.fasta |wc -l`    
+CC=`grep -o 'C' E.coli.fasta |wc -l`    
+
+AT=$(expr $AA + $TT )   # use command 'expr' to support calculate in the Unix
+echo $AT
+GC=$(expr $GG + $CC )   #
+echo $GC
+
+ratio=$( echo | awk "{print $AT/$GC }" ) # use command 'awk' to support the decimal calculation.
+echo " the ratio is $ratio "
+   
