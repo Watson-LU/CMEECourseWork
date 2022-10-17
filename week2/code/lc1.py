@@ -9,8 +9,14 @@ birds = ( ('Passerculus sandwichensis','Savannah sparrow',18.7),
 # lists containing the latin names, common names and mean body masses for
 # each species in birds, respectively. 
 
+
+
+
+
 # (2) Now do the same using conventional loops (you can choose to do this 
 # before 1 !). 
+
+
 
 # A nice example out is:
 # Step #1:
