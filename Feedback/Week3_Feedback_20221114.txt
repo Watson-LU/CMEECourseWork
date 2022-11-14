@@ -1,0 +1,1504 @@
+Starting code feedback for Jintao, Week3
+
+Current Points = 100
+
+Note that: 
+(1) Major sections begin with a double "====" line 
+(2) Subsections begin with a single "====" line 
+(3) Code output or text file content are printed within single "*****" lines 
+
+======================================================================
+======================================================================
+Your Git repo size this week is about 1.56 MiB on disk 
+
+PART 1: Checking project workflow...
+
+Found the following directories in parent directory: week2, week3, .git, week1, week4, Feedback
+
+Found the following files in parent directory: .gitignore, README.md
+
+Checking for key files in parent directory...
+
+Found .gitignore in parent directory, great! 
+
+Printing contents of .gitignore:
+
+**********************************************************************
+*~ 
+*.tmp
+*.log
+
+## PYTHON TEMPLATE
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+#   For a library or package, you might want to ignore these files since the code is
+#   intended to run in multiple environments; otherwise, check them in:
+# .python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# poetry
+#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
+#   This is especially recommended for binary packages to ensure reproducibility, and is more
+#   commonly ignored for libraries.
+#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+#poetry.lock
+
+# pdm
+#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
+#pdm.lock
+#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
+#   in version control.
+#   https://pdm.fming.dev/#use-with-ide
+.pdm.toml
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# PyCharm
+#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
+#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
+#  and can be added to the global gitignore or merged into this file.  For a more nuclear
+#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
+#.idea/
+
+## R TEMPLATE
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+.RDataTmp
+
+# User-specific files
+.Ruserdata
+
+# Example code in package build process
+*-Ex.R
+
+# Output files from R CMD build
+/*.tar.gz
+
+# Output files from R CMD check
+/*.Rcheck/
+
+# RStudio files
+.Rproj.user/
+
+# produced vignettes
+vignettes/*.html
+vignettes/*.pdf
+
+# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
+.httr-oauth
+
+# knitr and R markdown default cache directories
+*_cache/
+/cache/
+
+# Temporary files created by R markdown
+*.utf8.md
+*.knit.md
+
+# R Environment Variables
+.Renviron
+
+# pkgdown site
+docs/
+
+# translation temp files
+po/*~
+
+# RStudio Connect folder
+rsconnect/
+
+**********************************************************************
+
+Found README in parent directory, named: README.md
+
+Printing contents of README.md:
+
+**********************************************************************
+#My CMEE Coursework Repository
+
+## Files in the CMEECourseWork
+1. the feedback folder 
+2. the README.md file
+3. week1 folder
+4. week2 folder
+5. week3 folder
+6. week4 folder --practices in the Data Management and Visualization module
+...
+**********************************************************************
+
+======================================================================
+Looking for the weekly directories...
+
+Found 4 weekly directories: week1, week2, week3, week4
+
+The Week3 directory will be assessed 
+
+======================================================================
+======================================================================
+PART 2: Checking weekly code and workflow...
+
+======================================================================
+Assessing WEEK3...
+
+Found the following directories: code, sandbox, data, results
+
+Found the following files: README.md
+
+Checking for readme file in weekly directory...
+
+Found README in parent directory, named: README.md
+
+Printing contents of README.md:
+
+**********************************************************************
+# Project name: Week3 R practice work
+
+## Brief Description
+It's for the week3 R practices and works.
+There are total three practices in this section.
+The first one is about modify the old TreeHeight.R file to apply it into trees.csv file and store the first two row into TreeHts.csv fiel.
+The second task is using *apply family to vectorize the function to short the time, store the code into Vectorize2.R file.
+The last assignment is to figure out different between ovserved correlation coefficients with random correlations ones. And then adjust whether the Florida is getting warmer, store the code in Florida.R and writing interpration in the text through is_Florida_getting_war,er.tex, which coding by compilelatex.sh.
+
+## Languages
+Generally use bash and R that work in the both terminal and VSC.
+
+## Dependencies and installation
+generally no special packages. All the code could be run by the original R packages.
+
+
+## Project stucture and Usage
+
+1.In the first practice, add new code by applying the function to calculate the tree height in trees.csv and store it in a data.frame, as below:
+``` R
+Tree.Height.m<- TreeHeight(Tdata$Angle.degrees, Tdata$Distance.m)
+Tdata$Tree.Height.m <- Tree.Height.m
+```
+then, store it into a new csv file in results floder:
+``` R
+write.table(Tdata[1:2,],"../results/TreeHts.csv",row.names = FALSE )
+```
+To run the whole file obtain the results and find a csv file in the results folder
+``` R
+source("TreeHeight.R")
+```
+
+2.In this practice, in order to shorten the system running time, the sapply is applied to replace the for loop where the coer code are as below:
+``` R
+   sapply(1:length(p1), function(pop) {    
+      sapply(2:numyears1, function(yr) {
+      N[yr-1, pop] * exp(r * (1 - N[yr - 1, pop] / K) + rnorm(1, 0, sigma))
+    })
+```
+then to run the whole file to obtain the results,
+``` R
+source("Vectorize2.R")
+```
+
+3.In this practice, the observed correlation is calcualted by cor().
+```R
+Oricor<- cor(temp, year, method = "pearson")
+```
+while 5000 generation is sampled for the random correlation,
+```R
+nreps<-5000    
+T.random<-numeric(nreps)
+
+for (i in 1:nreps) {
+    Y <- year
+    X <- sample(temp, 100, replace = FALSE)    
+    T.random[i] <-cor(X,Y)    
+}
+```
+Ultimately, probabality is calculated between above two and histogram is drawn.
+```R
+prob <- length(T.random[T.random >= Oricor])/nreps
+hist(T.random, breaks = 50, main =  expression(paste("Distribution around ",rho, "= 0")), xlab = "correlation from randomized samples")
+```
+run the whole code to clearly understanding, 
+```R
+source("Florida.R")
+```
+Besides, a latex file is writing in is_Florida_getting_warmer.tex, and a compilelatex.sh file is set to run it into a pdf.
+```bash
+bash compilelatex.sh is_Florida_getting_warmer.tex
+```
+
+Finished
+
+## Author name and Contact
+Author name: Jintao Lu
+
+Contact: jl8722@ic.ac.uk
+
+
+
+**********************************************************************
+
+Found following files in results directory: MyData.csv, TreeHts.csv...
+
+Ideally, Results directory should be empty other than, perhaps a .gitkeep. 
+
+ 0.5 pts deducted per results file 
+
+Current Points = 99.0
+
+Found 19 code files: Vectorize1.R, TreeHeight.R, apply2.R, compilelatex.sh, browse.R, boilerplate.R, control_flow.R, Vectorize2.R, preallocate.R, try.R, Ricker.R, break.R, apply1.R, basic_io.R, is_Florida_getting_warmer.tex, Florida.R, next.R, sample.R, R_conditionals.R
+
+Found the following extra files: distribution around T.png
+0.5 pt deducted per extra file
+
+Current Points = 98.5
+
+======================================================================
+Testing script/code files...
+
+======================================================================
+Inspecting script file Vectorize1.R...
+
+File contents are:
+
+**********************************************************************
+M <- matrix(runif (1000000),1000,1000)
+
+SumAllElements <- function(M) {
+    Dimensions <- dim(M)
+    Tot <- 0
+    for (i in 1:Dimensions[1]) {
+        for (j in 1:Dimensions[2]) {
+            Tot <- Tot +M[i,j]
+        }
+    }
+    return (Tot)
+}
+
+print("Using loops, he time taken is :")
+print(system.time(SumAllElements(M)))
+
+print("Using the in-built vectorized function, the wimt taken is :")
+print(system.time(sum(M)))
+
+
+
+**********************************************************************
+
+Testing Vectorize1.R...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+[1] "Using loops, he time taken is :"
+   user  system elapsed 
+  0.082   0.003   0.085 
+[1] "Using the in-built vectorized function, the wimt taken is :"
+   user  system elapsed 
+  0.002   0.000   0.002 
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.49224s
+
+======================================================================
+Inspecting script file TreeHeight.R...
+
+File contents are:
+
+**********************************************************************
+rm(list=ls()) #first empty all variables
+
+#load the tree.csv
+Tdata<- read.csv("../data/trees.csv")
+str(Tdata)                             ##clearfy the structure of data
+
+
+# calculation functions setting up
+TreeHeight <- function(degrees, distance) {
+    radians <- degrees *pi /180
+    height <- distance * tan(radians)
+    return (height)
+}
+
+# apply the function to calculate the tree height in trees.csv
+Tree.Height.m<- TreeHeight(Tdata$Angle.degrees, Tdata$Distance.m)
+Tree.Height.m
+Tdata$Tree.Height.m <- Tree.Height.m
+str(Tdata)
+
+# write the output into a new file
+write.table(Tdata[1:2,],"../results/TreeHts.csv",row.names = FALSE )
+
+
+**********************************************************************
+
+Testing TreeHeight.R...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+'data.frame':	120 obs. of  3 variables:
+ $ Species      : chr  "Populus tremula" "Quercus robur" "Ginkgo biloba" "Fraxinus excelsior" ...
+ $ Distance.m   : num  31.7 46 31.2 34.6 45.5 ...
+ $ Angle.degrees: num  41.3 44.5 25.1 23.3 38.3 ...
+  [1] 27.80212 45.24603 14.66548 14.93418 35.97036 32.41021 17.45824 30.13738
+  [9] 20.31248 24.43166 27.50213 25.15590 29.39248 28.18639 30.73989 39.73756
+ [17] 24.69074 17.75982 20.81735 35.04535 31.85708 31.93860 13.48215 33.32665
+ [25] 30.23270 35.95132 21.
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.33067s
+
+======================================================================
+Inspecting script file apply2.R...
+
+File contents are:
+
+**********************************************************************
+SomeOperation <- function(v) {
+    if (sum(v) >0) { #should be note that sum(v)is s single value
+        return (v * 100)
+    } else {
+        return (v)
+    }
+}
+
+M <- matrix(rnorm(100), 10,10)
+print(apply(M,1,SomeOperation))
+
+**********************************************************************
+
+Testing apply2.R...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+           [,1]       [,2]       [,3]        [,4]        [,5]       [,6]
+ [1,]  80.96310   19.23908  -39.98060  2.38132777 -0.06334998 -45.290317
+ [2,] -26.40637   24.67978   68.78092  0.53809982  1.41686697 -61.582882
+ [3,] -20.60526  100.73933  -50.45038 -0.25177859  0.57460455 -56.281014
+ [4,] -77.84684 -190.95932  219.33560 -0.40355672 -0.46550578   6.246229
+ [5,]  57.86100   64.37962  -36.09738  0.43179060 -0.82320196  58.711770
+ [6,]  18.89896  -13.08098 -105.26370 -1.04792601 -0.60987588  
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.33957s
+
+======================================================================
+Inspecting script file compilelatex.sh...
+
+File contents are:
+
+**********************************************************************
+#
+pdflatex is_Florida_getting_warmer.tex
+
+#
+rm *.aux
+rm *.log
+**********************************************************************
+
+Testing compilelatex.sh...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./is_Florida_getting_warmer.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/blindtext/blin
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.56261s
+
+======================================================================
+Inspecting script file browse.R...
+
+File contents are:
+
+**********************************************************************
+Exponential <- function(N0 = 1, r = 1, generations = 10) {
+  # Runs a simulation of exponential growth
+  # Returns a vector of length generations
+  
+  N <- rep(NA, generations)    # Creates a vector of NA
+  
+  N[1] <- N0
+  for (t in 2:generations) {
+    N[t] <- N[t-1] * exp(r)
+    browser()
+  }
+  return (N)
+}
+
+plot(Exponential(), type="l", main="Exponential growth")
+**********************************************************************
+
+Testing browse.R...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+Called from: Exponential()
+debug: N[t] <- N[t - 1] * exp(r)
+debug: browser()
+debug: N[t] <- N[t - 1] * exp(r)
+debug: browser()
+debug: N[t] <- N[t - 1] * exp(r)
+debug: browser()
+debug: N[t] <- N[t - 1] * exp(r)
+debug: browser()
+debug: N[t] <- N[t - 1] * exp(r)
+debug: browser()
+debug: N[t] <- N[t - 1] * exp(r)
+debug: browser()
+debug: N[t] <- N[t - 1] * exp(r)
+debug: browser()
+debug: N[t] <- N[t - 1] * exp(r)
+debug: browser()
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.38949s
+
+======================================================================
+Inspecting script file boilerplate.R...
+
+File contents are:
+
+**********************************************************************
+# A boilerplate R script
+
+MyFunction <- function(Arg1, Arg2) {
+  
+  # Statements involving Arg1, Arg2:
+  print(paste("Argument", as.character(Arg1), "is a", class(Arg1))) # print Arg1's type
+  print(paste("Argument", as.character(Arg2), "is a", class(Arg2))) # print Arg2's type
+    
+  return (c(Arg1, Arg2)) #this is optional, but very useful
+}
+
+MyFunction(1,2) #test the function
+MyFunction("Riki","Tiki") #A different test
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**********************************************************************
+
+Testing boilerplate.R...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+[1] "Argument 1 is a numeric"
+[1] "Argument 2 is a numeric"
+[1] 1 2
+[1] "Argument Riki is a character"
+[1] "Argument Tiki is a character"
+[1] "Riki" "Tiki"
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.34364s
+
+======================================================================
+Inspecting script file control_flow.R...
+
+File contents are:
+
+**********************************************************************
+##if statements
+
+a <- TRUE
+if (a == TRUE) {
+    print ("a is TRUE")
+} else {
+    print ("a is FALSE")
+}
+
+#write in a single line, just set it in a line.....so silly
+z <- runif(1) ## Generate a uniformly distributed random number
+if (z <= 0.5) {print ("Less than a half")}
+
+
+## in a for loop
+for (i in seq(10)) {
+    j <- i * i
+    print(paste(i, " squared is", j )) # nolint
+}
+
+
+for(species in c('Heliodoxa rubinoides', 
+                 'Boissonneaua jardini', 
+                 'Sula nebouxii')) {
+      print(paste('The species is', species))
+}
+
+#use for loop by pre-existing vector  
+v1 <- c("a", "b","c")
+for (i in v1) {print(i)}
+
+##while loops
+
+i <- 0
+while (i < 10) {
+    i <- i+1
+    print(i^2)
+}
+
+
+
+
+
+
+
+
+
+**********************************************************************
+
+Testing control_flow.R...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+[1] "a is TRUE"
+[1] "1  squared is 1"
+[1] "2  squared is 4"
+[1] "3  squared is 9"
+[1] "4  squared is 16"
+[1] "5  squared is 25"
+[1] "6  squared is 36"
+[1] "7  squared is 49"
+[1] "8  squared is 64"
+[1] "9  squared is 81"
+[1] "10  squared is 100"
+[1] "The species is Heliodoxa rubinoides"
+[1] "The species is Boissonneaua jardini"
+[1] "The species is Sula nebouxii"
+[1] "a"
+[1] "b"
+[1] "c"
+[1] 1
+[1] 4
+[1] 9
+[1] 16
+[1] 25
+[1] 36
+[1] 49
+[1] 64
+[1] 81
+[1] 100
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.34864s
+
+======================================================================
+Inspecting script file Vectorize2.R...
+
+File contents are:
+
+**********************************************************************
+# Runs the stochastic Ricker equation with gaussian fluctuations
+
+rm(list = ls())
+
+stochrick <- function(p0 = runif(1000, .5, 1.5), r = 1.2, K = 1, sigma = 0.2,numyears = 100)
+{
+
+  N <- matrix(NA, numyears, length(p0))  #initialize empty matrix
+
+  N[1, ] <- p0
+
+  for (pop in 1:length(p0)) { #loop through the populations
+
+    for (yr in 2:numyears){ #for each pop, loop through the years
+
+      N[yr, pop] <- N[yr-1, pop] * exp(r * (1 - N[yr - 1, pop] / K) + rnorm(1, 0, sigma)) # add one fluctuation from normal distribution
+    
+     }
+  
+  }
+ return(N)
+
+}
+
+# Now write another function called stochrickvect that vectorizes the above to
+# the extent possible, with improved performance: 
+
+stochrickvect <- function(p1 = runif(1000, .5, 1.5), r = 1.2, K = 1, sigma = 0.2,numyears1 = 100)
+{
+
+  N <- matrix(NA, numyears1, length(p1))  #initialize empty matrix
+
+  N[1, ] <- p1
+    #use sapply to subtitude the for loop 
+    sapply(1:length(p1), function(pop) {    
+      sapply(2:numyears1, function(yr) {
+      N[yr-1, pop] * exp(r * (1 - N[yr - 1, pop] / K) + rnorm(1, 0, sigma)) # add one fluctuation from normal distribution
+    })
+  
+  })
+  return(N)
+} 
+
+
+print("Vectorized Stochastic Ricker takes time as:")
+print(system.time(res2<-stochrickvect()))
+
+
+
+**********************************************************************
+
+Testing Vectorize2.R...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+[1] "Vectorized Stochastic Ricker takes time as:"
+   user  system elapsed 
+  0.444   0.031   0.475 
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.88004s
+
+======================================================================
+Inspecting script file preallocate.R...
+
+File contents are:
+
+**********************************************************************
+##pre-allocation
+
+#explaint the reason  why they need re-preakllocation
+NoPreallocFun <-function(x) {
+    a <- vector() #empty vector
+    for  (i in 1:x) {
+        a <- c(a,i)
+        print(a)
+        print(object.size(a))
+    }
+}
+
+system.time(NoPreallocFun(10))
+
+
+#the true pre-allocation mehthod
+PrealloFun <- function(x) {
+    a <- rep(NA, x) #pre-allocation for vector
+    for (i in 1:x) {
+        a[i] <- i #assign
+        print(a)
+        print(object.size(a))
+    }
+}
+
+
+system.time(PrealloFun(10))
+
+
+**********************************************************************
+
+Testing preallocate.R...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+[1] 1
+56 bytes
+[1] 1 2
+56 bytes
+[1] 1 2 3
+64 bytes
+[1] 1 2 3 4
+64 bytes
+[1] 1 2 3 4 5
+80 bytes
+[1] 1 2 3 4 5 6
+80 bytes
+[1] 1 2 3 4 5 6 7
+80 bytes
+[1] 1 2 3 4 5 6 7 8
+80 bytes
+[1] 1 2 3 4 5 6 7 8 9
+96 bytes
+ [1]  1  2  3  4  5  6  7  8  9 10
+96 bytes
+   user  system elapsed 
+  0.024   0.004   0.027 
+ [1]  1 NA NA NA NA NA NA NA NA NA
+96 bytes
+ [1]  1  2 NA NA NA NA NA NA NA NA
+96 bytes
+ [1]  1  2  3 NA NA NA NA NA NA NA
+96 bytes
+ [1]  1  2  3  4 NA NA NA NA NA NA
+96 bytes
+ [1]  1  2  3  4  5 NA N
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.39654s
+
+======================================================================
+Inspecting script file try.R...
+
+File contents are:
+
+**********************************************************************
+
+doit <- function(x) {
+    temp_x <- sample(x, replace = TRUE)
+    if(length(unique(temp_x)) > 30) {#only take mean if sample was sufficient
+         print(paste("Mean of this sample was:", as.character(mean(temp_x))))
+        } 
+    else {
+        stop("Couldn't calculate mean: too few unique values!")
+        }
+    }
+
+set.seed(1345) ##get the game values to illustration
+popn <-rnorm(50)
+
+hist(popn)
+
+lapply(1:15 , function(i) doit(popn))
+
+result <- lapply(1:15, function(i) try(doit(popn), FALSE))
+**********************************************************************
+
+Testing try.R...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+[1] "Mean of this sample was: -0.11620822588674"
+[1] "Mean of this sample was: -0.0468516755995931"
+[1] "Mean of this sample was: -0.0890228211466614"
+[1] "Mean of this sample was: -0.124229742255296"
+
+**********************************************************************
+
+Encountered error (or warning):
+
+***IGNORE IF THIS ERROR IS EXPECTED AS PART OF AN IN-CLASS EXERCISE***
+
+Error in doit(popn) : Couldn't calculate mean: too few unique values!
+Calls: lapply -> FUN -> doit
+Execution halted
+
+======================================================================
+Inspecting script file Ricker.R...
+
+File contents are:
+
+**********************************************************************
+
+Ricker <- function(N0=1, r=1, K=10, generations=50)
+{
+  # Runs a simulation of the Ricker model
+  # Returns a vector of length generations
+  
+  N <- rep(NA, generations)    # Creates a vector of NA
+  
+  N[1] <- N0
+  for (t in 2:generations)
+  {
+    N[t] <- N[t-1] * exp(r*(1.0-(N[t-1]/K)))
+  }
+  return (N)
+}
+
+plot(Ricker(generations=10), type="l")
+
+
+
+
+**********************************************************************
+
+Testing Ricker.R...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.38989s
+
+======================================================================
+Inspecting script file break.R...
+
+File contents are:
+
+**********************************************************************
+
+
+
+i <- 0 #Initialize i
+    while (i < Inf) {
+        if (i == 10) {
+            break 
+        } else { # Break out of the while loop!  
+            cat("i equals " , i , " \n")
+            i <- i + 1 # Update i
+    }
+}
+**********************************************************************
+
+Testing break.R...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+i equals  0  
+i equals  1  
+i equals  2  
+i equals  3  
+i equals  4  
+i equals  5  
+i equals  6  
+i equals  7  
+i equals  8  
+i equals  9  
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.34286s
+
+======================================================================
+Inspecting script file apply1.R...
+
+File contents are:
+
+**********************************************************************
+## Build a random matrix
+M <-matrix(rnorm(100),10,10)
+
+##take the mean of each row
+RowMeans <- apply(M, 1, mean)
+print(RowMeans)
+
+##now the variance
+RowVars <- apply(M,1,var)
+print(RowVars)
+
+##by column
+ColMeans <- apply(M, 2, mean)
+print(ColMeans)
+
+
+
+
+
+
+**********************************************************************
+
+Testing apply1.R...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+ [1] -0.11485822 -0.25722181  0.23352344  0.32998894 -0.18448286  0.31897970
+ [7]  0.48790973 -0.05772247 -0.06091652 -0.01739186
+ [1] 1.1662925 1.2420359 0.4311220 0.6647482 0.9727834 1.2963848 2.1727785
+ [8] 1.0520736 0.6900100 1.5130912
+ [1] -0.23785224  0.06495673  0.29408844 -0.14551070 -0.10463451 -0.27280717
+ [7]  0.50089951 -0.06703013  0.43023851  0.21545965
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.31693s
+
+======================================================================
+Inspecting script file basic_io.R...
+
+File contents are:
+
+**********************************************************************
+# A simple script to illustrate R input-output.  
+# Run line by line and check inputs outputs to understand what is happening  
+
+MyData <- read.csv("../data/trees.csv", header = TRUE) # import with headers
+
+write.csv(MyData, "../results/MyData.csv") #write it out as a new file
+
+write.table(MyData[1,], file = "../results/MyData.csv",append=TRUE) 
+write.csv(MyData, "../results/MyData.csv", row.names=TRUE) # write row names
+
+write.table(MyData, "../results/MyData.csv", col.names=FALSE) 
+**********************************************************************
+
+Testing basic_io.R...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+
+**********************************************************************
+
+Encountered error (or warning):
+
+***IGNORE IF THIS ERROR IS EXPECTED AS PART OF AN IN-CLASS EXERCISE***
+
+Warning message:
+In write.table(MyData[1, ], file = "../results/MyData.csv", append = TRUE) :
+  appending column names to file
+
+======================================================================
+Inspecting script file is_Florida_getting_warmer.tex...
+
+File contents are:
+
+**********************************************************************
+\documentclass[8pt]{article}
+\usepackage{blindtext}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+
+\title{Is Florida Getting Warmer}
+
+\begin{document}
+    \section{The interperation of whether Florida getting warmer or not}
+    \begin{lstlisting}[language=R]
+        #after load the data file, take the data into sets
+        temp<- c(ats$Temp)
+        year<- c(ats$Year)
+        #observed coorelation between temperature and year
+        Oricor<- cor(temp, year, method = "pearson")
+        Oricor
+
+        #using 5000 generation to simulate random situation
+        nreps<-5000
+        T.random<-numeric(nreps)
+            
+        #in each generation, calculate the correlation between two factors
+        for (i in 1:nreps) {
+            Y <- year
+            X <- sample(temp, 100, replace = FALSE)   
+            T.random[i] <-cor(X,Y)
+        }
+        #calculate the similar situation like observed one in the 
+        #randon simulation
+        prob <- length(T.random[T.random >= Oricor])/nreps
+        #histgram the distribution of random one correlation
+        hist(r.random, breaks = 50, main =  expression(paste(
+            "Distribution around ",rho, "= 0")), 
+            xlab = "correlation from randomized samples")
+        \end{lstlisting}
+    
+    The code 'prob' showing nearly 0 possibility randomized temperature influence.
+    Although the observed temperature is during a successive time-points, the comparison 
+    between it and random time correlation showing that they have significant different.
+    Thus, the 0.53 correlation inidcate the temperature has significant correlation with the years,
+    which further indicate that Florida is getting warmer through the years. In addition, the
+    graph below also showing the observed one is different with the random calculating one.
+    
+    \includegraphics[width=\textwidth]{distribution around T}
+    
+    This graphic showing that the observed correlation is larger than 0.5 which is nearly tend to 0.
+
+\end{document}
+
+
+
+
+
+
+
+
+
+**********************************************************************
+
+Testing is_Florida_getting_warmer.tex...
+
+======================================================================
+Inspecting script file Florida.R...
+
+File contents are:
+
+**********************************************************************
+
+rm(list=ls())
+#load the data file from data folder
+load("../data/KeyWestAnnualMeanTemperature.RData")
+ls()
+class(ats)
+head(ats)   #notify the data structure
+# extract data from data set
+temp<- c(ats$Temp)   
+year<- c(ats$Year)
+
+#calculate the correlation using original orders
+Oricor<- cor(temp, year, method = "pearson")
+Oricor
+
+cat("the obtained correlation is", Oricor, '\n')
+
+#calculate the correlation using randomly re-assigning temperature data
+
+nreps<-5000     #to repeat 5000 times samples
+T.random<-numeric(nreps)
+
+for (i in 1:nreps) {
+    Y <- year
+    X <- sample(temp, 100, replace = FALSE)    #in total 100 numbers of data to sample
+    T.random[i] <-cor(X,Y)    # store correlation results into T.random
+}
+
+#calculate the probablity of obeained one / sample one
+prob <- length(T.random[T.random >= Oricor])/nreps
+
+paste("probablity randomized correlation >= observed one is",prob)
+#applying histogram to convince the audience
+hist(T.random, breaks = 50, main =  expression(paste("Distribution around ",rho, "= 0")), xlab = "correlation from randomized samples")
+
+
+
+
+
+
+**********************************************************************
+
+Testing Florida.R...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+[1] "ats"
+[1] "data.frame"
+  Year     Temp
+1 1901 23.75000
+2 1902 24.66667
+3 1903 24.71667
+4 1904 24.51667
+5 1905 24.88333
+6 1906 24.63333
+[1] 0.5331784
+the obtained correlation is 0.5331784 
+[1] "probablity randomized correlation >= observed one is 0"
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.59475s
+
+======================================================================
+Inspecting script file next.R...
+
+File contents are:
+
+**********************************************************************
+
+
+for (i in 1:10) {
+  if ((i %% 2) == 0) # check if the number is odd
+    next # pass to next iteration of loop 
+  print(i)
+}
+**********************************************************************
+
+Testing next.R...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+[1] 1
+[1] 3
+[1] 5
+[1] 7
+[1] 9
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.34274s
+
+======================================================================
+Inspecting script file sample.R...
+
+File contents are:
+
+**********************************************************************
+######### Functions ##########
+
+## A function to take a sample of size n from a population "popn" and return its mean
+myexperiment <- function(popn,n) {
+    pop_sample <- sample(popn, n, replace = FALSE)
+    return(mean(pop_sample))
+}
+
+## Calculate means using a FOR loop on a vector without preallocation:
+loopy_sample1 <- function(popn, n, num) {
+    result1 <- vector() #Initialize empty vector of size 1 
+    for(i in 1:num) {
+        result1 <- c(result1, myexperiment(popn, n))
+    }
+    return(result1)
+}
+
+## To run "num" iterations of the experiment using a FOR loop on a vector with preallocation:
+loopy_sample2 <- function(popn, n, num) {
+    result2 <- vector(,num) #Preallocate expected size
+    for(i in 1:num) {
+        result2[i] <- myexperiment(popn, n)
+    }
+    return(result2)
+}
+
+## To run "num" iterations of the experiment using a FOR loop on a list with preallocation:
+loopy_sample3 <- function(popn, n, num) {
+    result3 <- vector("list", num) #Preallocate expected size
+    for(i in 1:num) {
+        result3[[i]] <- myexperiment(popn, n)
+    }
+    return(result3)
+}
+
+
+## To run "num" iterations of the experiment using vectorization with list lapply:
+lapply_sample <- function(popn, n, num) {
+    result4 <- lapply(1:num, function(i) myexperiment(popn, n))
+    return(result4)
+}
+
+## To run "num" iterations of the experiment using vectorization with vector sapply:
+sapply_sample <- function(popn, n, num) {
+    result5 <- sapply(1:num, function(i) myexperiment(popn, n))
+    return(result5)
+}
+
+
+set.seed(12345)
+popn <- rnorm(10000)
+#hist(popn)
+n <- 100 #sample size for each experiment
+num <- 10000 # number of times to return the experiment
+
+print("Using loops without preallocation on a vector took:" )
+print(system.time(loopy_sample1(popn, n, num)))
+
+print("Using loops with preallocation on a vector took:" )
+print(system.time(loopy_sample2(popn, n, num)))
+
+print("Using loops with preallocation on a list took:" )
+print(system.time(loopy_sample3(popn, n, num)))
+
+print("Using the vectorized sapply function (on a vector) took:" )
+print(system.time(sapply_sample(popn, n, num)))
+
+print("Using the vectorized lapply function (on a list) took:" )
+print(system.time(lapply_sample(popn, n, num)))
+
+
+
+
+
+**********************************************************************
+
+Testing sample.R...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+[1] "Using loops without preallocation on a vector took:"
+   user  system elapsed 
+  0.446   0.030   0.477 
+[1] "Using loops with preallocation on a vector took:"
+   user  system elapsed 
+  0.282   0.003   0.285 
+[1] "Using loops with preallocation on a list took:"
+   user  system elapsed 
+  0.285   0.000   0.284 
+[1] "Using the vectorized sapply function (on a vector) took:"
+   user  system elapsed 
+  0.285   0.000   0.286 
+[1] "Using the vectorized lapply function (on a list) took:"
+   user  sy
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 2.04783s
+
+======================================================================
+Inspecting script file R_conditionals.R...
+
+File contents are:
+
+**********************************************************************
+##function with conditionals
+
+#check if an integer is even
+is.even <- function(n=2) {
+    if (n %%2 ==2){
+        return(paste(n,'is even!'))
+    } else {
+        return(paste(n, 'is odd!'))
+    }
+}
+
+
+is.even(6)
+
+
+
+# Checks if a number is a power of 2
+is.power2 <- function(n = 2) {
+  if (log2(n) %% 1==0) {
+    return(paste(n, 'is a power of 2!'))
+  } else {
+  return(paste(n,'is not a power of 2!'))
+    }
+}
+
+is.power2(4)
+
+#check if a number is prime
+is.prime <- function(n) {
+    if (n ==0)   {
+        return(paste(n ,'is a zero!'))
+    }   else if (n==1)  {
+        return(paste(n ,'is just a unit'))
+    }
+
+
+    ints <- 2:(n-1)
+
+    if (all(n%%ints !=0))   {
+        return(paste(n ,'is a prime'))
+    }   else    {
+        return(paste(n,'is a composite'))
+    }
+
+}
+
+is.prime(3)
+**********************************************************************
+
+Testing R_conditionals.R...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+[1] "6 is odd!"
+[1] "4 is a power of 2!"
+[1] "3 is a prime"
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.32536s
+
+======================================================================
+======================================================================
+Finished running scripts
+
+Ran into 2 errors
+
+======================================================================
+======================================================================
+
+FINISHED WEEKLY ASSESSMENT
+
+Current Points for the Week = 98.5
+
+NOTE THAT THESE ARE POINTS, NOT MARKS FOR THE WEEK!
