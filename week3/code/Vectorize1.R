@@ -1,4 +1,4 @@
-M <- matrix(runif (1000000),1000,1000)
+M <- matrix(runif(1000000),1000,1000)
 
 SumAllElements <- function(M) {
     Dimensions <- dim(M)
@@ -16,5 +16,4 @@ print(system.time(SumAllElements(M)))
 
 print("Using the in-built vectorized function, the wimt taken is :")
 print(system.time(sum(M)))
-
 

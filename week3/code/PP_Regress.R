@@ -33,9 +33,10 @@ t1<- MyDF %>%
     group_by(Type.of.feeding.interaction,Predator.lifestage) %>% 
         summarise(intercept=lm(Predator.mass ~ Prey.mass)$coefficients[1][1],
         slope = lm(Predator.mass~Prey.mass)$coefficients[2][1],
-        Ftest_value=lm(Predator.mass~Prey.mass$fstatistic),
+        Ftest_value=lm(Predator.mass~Prey.mass)$fstatistic,
         R_squared=cor.test(Prey.mass, Predator.mass)$estimate ** 2,
         p_value=cor.test(Prey.mass, Predator.mass)$p.value, na.rm = TRUE)
+        
 t1
 
 
