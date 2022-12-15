@@ -1,45 +1,82 @@
+#!/usr/bin/env python3
+
+""" a group work on updating a debugging practice
+    using doctests to make sure there is no bug
+"""
+
+__appname__ = 'oaks_debugme'
+__author__ = '01_Awesome_Aardvarks'
+__version__ = '0.0.1'
+__license__ = 'None'
+
 import csv
 import sys
-import doctest                          #import doctest to test the codes
+import doctest
+import re
+#regular expression
 
 #Define function
 def is_an_oak(name):
-    #import ipdb; ipdb.set_trace()          # first use idpd to find out the bug is happended in 'quercs'
-    """ Returns True if name is starts with 'quercus' 
-    >>> is_an_oak('Faggus sylvatica')       
-        'False'
-    >>> is_an_oak('quercs')
-        'False'
-    >>> is_an_oak('quercus')
-        'True'
-    >>> is_an_oak('quercuss')
-        'False'
-    >>> is_an_oak('qquercus')
-        'False'
+    """ Returns True if name is right or have a little typo
+    
+    >>> is_an_oak('Fagus sylvatica')
+    False
+    >>> is_an_oak('Quercuss')
+    True
+    >>> is_an_oak('Quercus')
+    True
+    >>> is_an_oak('Quecuss')
+    True
+    >>> is_an_oak('Quecusssss')
+    True
+    >>> is_an_oak('Quarcus')
+    True
+    >>> is_an_oak('uarcus')
+    True
 
-    """                                      # use the structure of doctest to test each situation if they could be passed.
-    return name.lower().endswith('quercus')  ## the input of ('quercus') could solve the first bug that no "FOUND AN OAK" happened
-                                             ## the change command of "startswith" to "endswith" could only partly solve the second bug. like the fifth test which is failed.
-                                             ## the final solutions is double check by "startswith" and "endswith" command. 
+    """
+    ##never leave extra space after your expectation answers in doctest
+    ##that will fail even if you get your expectation right
+    
+    
+    # will return true even if the user misses 'r', or with multiple 's' at the end, or replace 'e' with 'a'
+    ## The question mark symbol ? matches zero or one occurrence of the pattern left to it.
+    ## The star symbol * matches zero or more occurrences of the pattern left to it.
+    ## The plus symbol + causes the resulting RE to match 1 or more repetitions of the preceding RE. ab+ will match ‘a’ followed by any non-zero number of ‘b’s; it will not match just ‘a’.
+    ## Vertical bar | is used for alternation (or operator).
+    ## Parentheses () is used to group sub-patterns. 
+    
+    pattern = '^q?u(e|a)r?cus+$'
+    if re.match(pattern, name.lower()):
+        return True
+    else:
+        return False
+
+doctest.testmod()
+# python3 -m doctest -v your_function_to_test.py
 
 def main(argv): 
     f = open('../data/TestOaksData.csv','r')
     g = open('../data/JustOaksData.csv','w')
     taxa = csv.reader(f)
+    next(taxa, None) # ignore the header    
     csvwrite = csv.writer(g)
-    oaks = set()
-    for row in taxa:
+    csvwrite.writerow(["Genus", "Species"])
+    for row in taxa: 
         print(row)
-        print ("The genus is: ") 
+        print ("The genus is: ")
         print(row[0] + '\n')
-        if is_an_oak(row[0]):
+        #strip off the space incase someone input the space due to their habit in inputting Genes name
+        if is_an_oak(row[0].strip(' ')):
             print('FOUND AN OAK!\n')
-            csvwrite.writerow([row[0], row[1]])    
-
+            #strip off the space incase someone input the space due to their habit in inputting Genes name
+            csvwrite.writerow([row[0].strip(' '), row[1]]) 
+    ## shouldn't close the file before you are still using the variables come from it
+    f.close()
+    g.close()   
     return 0
-    
+           
 if (__name__ == "__main__"):
     status = main(sys.argv)
+    sys.exit(status)
 
-
-doctest.testmod()                           #to finish the doctest

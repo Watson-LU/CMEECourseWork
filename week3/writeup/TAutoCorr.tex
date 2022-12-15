@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\title{Is annual temperatures are correlated in successive years in Florida?}
+\author{01\_Awesome\_Aardvarks}
+\date{\today}
+
+\begin{document}
+  \maketitle
+  \section{Introduction}
+  Key West is an island located in Florida. Warmer temperatures in Key West can result in less dissolved oxygen in water which may associated with fish dying. Higher temperatures can increasing risk of coral bleaching as well\citep{climatechange}. \par
+  \vspace{5mm}
+  \noindent In this study, we analyzed whether the temperature in one year is significantly correlated with the next year(successive year), across years in Key West.
+  \section{Materials \& Methods}
+  \subsection{Computing Tools}
+  We use the R language because the R language is convenient in the processing of data frame, and the ability to analyze small dataset (here the data has 100 observations) is excellent. The operating system is Ubuntu 22.04.
+  \subsection{Data}
+  The data recorded the temperatures in Florida from 1900 to 2000. The scatter plot between temperature and year is shown in Figure \ref{fig:1}. Here we show some of the data.
+  \begin{verbatim}
+    > str(ats)
+      'data.frame':   100 obs. of  2 variables:
+      $ Year: int  1901 1902 1903 1904 1905 1906 1907 1908 1909 1910 ...
+      $ Temp: num  23.8 24.7 24.7 24.5 24.9 ...
+  \end{verbatim}
+
+  \begin{figure}[htb]
+    \includegraphics[width=\linewidth]{../results/TAutoCorrPlot1.pdf}
+    \caption{The scatter plot between temperatures and years.}
+    \label{fig:1}
+  \end{figure}
+
+ \subsection{Permutation Analysis}
+ A permutation test (also called re-randomization test) is an exact statistical hypothesis test making use of the proof by contradiction. The properties of random permutations were proved by \cite{hemerik_exact_2018} through the Conditional Monte Carlo test they proposed.\par
+ \vspace{5mm}
+ The test statistic is the correlation coefficient between temperature and successive years. The null hypothesis here is the temperature of one year isn't correlated with the next year across years in Florida. The alternative hypothesis here is temperature of one year is correlated with the next year across years in Florida. We did 10000 times shuffles of successive years. 
+ \subsection{Estimation of p-value}
+ Instead of standard p-value calculation, we calculated the estimation of p-value in equation \ref{equ:1} for a correlation coefficient, because measurements of climatic variables in successive time-points in a time series (successive seconds, minutes, hours, months, years, etc.) are not independent.
+ \begin{equation}\label{equ:1}
+  estimated\_p = \frac{\sum{(cor\_of\_random \ge temp\_cor)}}{length(cor\_of\_random)}
+ \end{equation}
+ \section{Results \& Discussion}
+ The estimated p-value after 10000 times shuffles is around $1 \times 10 ^{-4}$ which is much less than 0.05. This p-value supports the alternative hypothesis and rejects the null hypothesis.\par
+ \vspace{5mm}
+ \noindent The distribution of the random correlation coefficients is shown in Figure \ref{fig:2}. The red line in Figure \ref{fig:2} is the observed Pearson correlation coefficient $r$ before shuffling the successive years. The observed $r$ is larger compared to the distribution of possible $r$. In other words, when the empirical value is very far from the permutation results, we can be pretty sure that: when the variables are truly independent, a $r$ as strong as the observed $r$ is unlikely to appear in a situation of pure chance. \par
+ \vspace{5mm}
+ \begin{figure}[htb]
+  \includegraphics[width=\linewidth]{../results/TAutoCorrPlot2.pdf}
+  \caption{Correlation coefficients after permutation.}
+  \label{fig:2}
+ \end{figure}
+
+
+  \clearpage
+  \bibliographystyle{agsm}
+
+  \bibliography{TAutoCorr}
+
+\end{document}
