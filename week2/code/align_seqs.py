@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # Two example sequences to match
 seq2 = "ATCGCCGGATTACGGG"
 seq1 = "CAATTCGGAT"

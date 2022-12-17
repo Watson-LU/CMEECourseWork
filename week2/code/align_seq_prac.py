@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python3
 import csv
 
 #To imput sequences from a csv file

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def buggyfunc(x):
     y = x
     for i in range (x):
