@@ -7,4 +7,6 @@
 4. week2 folder
 5. week3 folder
 6. week4 folder --practices in the Data Management and Visualization module
+7. week7 folder
+8. Miniproject folder
 ...
