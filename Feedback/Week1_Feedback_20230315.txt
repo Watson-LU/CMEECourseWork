@@ -1,0 +1,1027 @@
+Starting code feedback for Jintao, Week1
+
+Current Points = 100
+
+Note that: 
+(1) Major sections begin with a double "====" line 
+(2) Subsections begin with a single "====" line 
+(3) Code output or text file content are printed within single "*****" lines 
+
+======================================================================
+======================================================================
+Your Git repo size this week is about 4.48 MiB on disk 
+
+PART 1: Checking project workflow...
+
+Found the following directories in parent directory: .git, MiniProject, week7, week3, week2, Feedback, week1
+
+Found the following files in parent directory: README.md, .gitignore
+
+Checking for key files in parent directory...
+
+Found .gitignore in parent directory, great! 
+
+Printing contents of .gitignore:
+
+**********************************************************************
+*~ 
+*.tmp
+*.log
+
+## PYTHON TEMPLATE
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+#   For a library or package, you might want to ignore these files since the code is
+#   intended to run in multiple environments; otherwise, check them in:
+# .python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# poetry
+#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
+#   This is especially recommended for binary packages to ensure reproducibility, and is more
+#   commonly ignored for libraries.
+#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+#poetry.lock
+
+# pdm
+#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
+#pdm.lock
+#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
+#   in version control.
+#   https://pdm.fming.dev/#use-with-ide
+.pdm.toml
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# PyCharm
+#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
+#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
+#  and can be added to the global gitignore or merged into this file.  For a more nuclear
+#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
+#.idea/
+
+## R TEMPLATE
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+.RDataTmp
+
+# User-specific files
+.Ruserdata
+
+# Example code in package build process
+*-Ex.R
+
+# Output files from R CMD build
+/*.tar.gz
+
+# Output files from R CMD check
+/*.Rcheck/
+
+# RStudio files
+.Rproj.user/
+
+# produced vignettes
+vignettes/*.html
+vignettes/*.pdf
+
+# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
+.httr-oauth
+
+# knitr and R markdown default cache directories
+*_cache/
+/cache/
+
+# Temporary files created by R markdown
+*.utf8.md
+*.knit.md
+
+# R Environment Variables
+.Renviron
+
+# pkgdown site
+docs/
+
+# translation temp files
+po/*~
+
+# RStudio Connect folder
+rsconnect/
+
+**********************************************************************
+
+Found README in parent directory, named: README.md
+
+Printing contents of README.md:
+
+**********************************************************************
+#My CMEE Coursework Repository
+
+## Files in the CMEECourseWork
+1. the feedback folder 
+2. the README.md file
+3. week1 folder
+4. week2 folder
+5. week3 folder
+6. week4 folder --practices in the Data Management and Visualization module
+7. week7 folder
+8. Miniproject folder
+...
+**********************************************************************
+
+======================================================================
+Looking for the weekly directories...
+
+Found 4 weekly directories: week1, week2, week3, week7
+
+The Week1 directory will be assessed 
+
+======================================================================
+======================================================================
+PART 2: Checking weekly code and workflow...
+
+======================================================================
+Assessing WEEK1...
+
+Found the following directories: code, sandbox, results, data
+
+Found the following files: README.md, temporary.tmp, README.txt
+
+Checking for readme file in weekly directory...
+
+Found README in parent directory, named: README.md
+
+Printing contents of README.md:
+
+**********************************************************************
+# Project name: Week1 practice work
+
+## Brief Description
+It is for the week1 practices and works, with the practice of writing README file. The first work is for FASTA exercise, which answer 5 questions and store the code in the UnixPrac1.txt while store the file in the data directory. The second work is for shell script, which use a "sh" file to change comma separated values and converts it to a space sperated values file. The target files are in the data directory. The last work is for LaTeX practice. To test ComplieLaTeX_practicework.sh with FirstExample.tex ,which allow others run it from their computer.
+
+## Languages
+Generally use bash and work in the both terminal and VSC.
+
+## Dependencies
+generally no
+
+## Installation
+The practice runs with the basic commands, all installations are stored in the class bootcamp, no other special projects or packages required. 
+
+## Project stucture and Usage
+The project contains two parts. The first part contains practice works during the class. The second part display the answer codes of thw whole week1 practices.
+The first part is ignored. The second part is divided as FASTA exercise, Shell script and LaTeX practice.                                                                         1.In the FASTA exercise, there are 5 questions, files are stored in data directory (407228326.fasta, 407228412.fasta, E.coli.fasta):  
+    
+    Q1: the CountLines.sh script is used to cover the question. 
+    
+    Q2:  print as below:
+    ```bash
+     tail -n +2 filename
+    ```
+    
+    Q3: print as below:
+    ```bash
+    tail -n +2 filename |tr -d '\n' | wc -c
+    ```
+    
+    Q4:print as below:
+    ```bash
+    grep -o "ATGC" filename |wc -l
+    ```
+    
+    Q5:use variables to refer and store caculated values: for example
+    ```bash
+    AA= `grep -o "A" filename |wc -l`
+    ```
+    then use expr to calculate, for example:
+    ``` bash
+    AT = $(ex[r $AA +$TT])
+    ```
+    ultemately, caculate the ratio in decimals use awk command:
+    ```bash
+    ratio=$(echo | awk "{print $AT/%GC}") 
+    ```
+
+2.In the shell script practice, the temperature txt files (1800.csv , 1801.csv , 1802.csv, 1803.csv) should be bashed by csvtospace.sh script as below:
+    ```bash
+    bash csvtospace.sh ../data/ filename
+    ```
+
+3.In the LaTeX practice, in order to enable others to ran the code in their computer, the CompileLaTeX_practicework.sh is to work for it.
+    ```bash
+    bash CompileLaTeX_practicework.sh FirstExample.tex
+    ```
+
+Finished.
+
+## Author name and Contact
+Author name: Jintao Lu
+
+Contact: jl8722@ic.ac.uk
+
+
+
+
+
+**********************************************************************
+
+Results directory is empty - good! 
+
+Found 13 code files: tiff2png.sh, CountLines.sh, FirstBiblio.bib, tabtocsv.sh, variables.sh, FirstExample.tex, boilerplate.sh, CompileLaTeX_practicework.sh, csvtospace.sh, ConcatenateTwoFiles.sh, UnixPrac1.txt, CompileLaTeX.sh, MyExampleScript.sh
+
+Found the following extra files: FirstExample.aux
+0.5 pt deducted per extra file
+
+Current Points = 99.5
+
+======================================================================
+Testing script/code files...
+
+======================================================================
+Inspecting script file tiff2png.sh...
+
+File contents are:
+
+**********************************************************************
+#!/bin/bash
+
+for f in *.tif;
+    do
+        echo "Converting $f";
+        convert "$f"    "$(basename "$f .tif).png";
+    done
+**********************************************************************
+
+Testing tiff2png.sh...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+
+**********************************************************************
+
+Encountered error (or warning):
+
+***IGNORE IF THIS ERROR IS EXPECTED AS PART OF AN IN-CLASS EXERCISE***
+
+tiff2png.sh: line 6: unexpected EOF while looking for matching `)'
+tiff2png.sh: line 8: syntax error: unexpected end of file
+
+======================================================================
+Inspecting script file CountLines.sh...
+
+File contents are:
+
+**********************************************************************
+#!/bin/bash
+
+NumLines=`wc -l < $1`
+echo "The file $1 has $NumLines lines"
+echocd code
+**********************************************************************
+
+Testing CountLines.sh...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+The file  has  lines
+
+**********************************************************************
+
+Encountered error (or warning):
+
+***IGNORE IF THIS ERROR IS EXPECTED AS PART OF AN IN-CLASS EXERCISE***
+
+CountLines.sh: line 3: $1: ambiguous redirect
+CountLines.sh: line 5: echocd: command not found
+
+======================================================================
+Inspecting script file FirstBiblio.bib...
+
+File contents are:
+
+**********************************************************************
+@article{verhulst1838notice,
+  title={Notice sur la loi que la population suit dans son accroissement},
+  author={Verhulst, Pierre-Fran{\c{c}}ois},
+  journal={Corresp. Math. Phys.},
+  volume={10},
+  pages={113--126},
+  year={1838}
+}
+**********************************************************************
+
+Testing FirstBiblio.bib...
+
+======================================================================
+Inspecting script file tabtocsv.sh...
+
+File contents are:
+
+**********************************************************************
+#!/bin/sh
+# Author: Your name you.login@imperial.ac.uk
+# Script: tabtocsv.sh
+# Description: substitute the tabs in the files with commas
+#
+# Saves the output into a .csv file
+# Arguments: 1 -> tab delimited file
+# Date: Oct 2019
+
+echo "Creating a comma delimited version of $1 ..."
+cat $1 | tr -s "\t" "," >> $1.csv
+echo "Done!"
+exit
+**********************************************************************
+
+Testing tabtocsv.sh...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+Creating a comma delimited version of  ...
+Done!
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.00432s
+
+======================================================================
+Inspecting script file variables.sh...
+
+File contents are:
+
+**********************************************************************
+#!/bin/sh
+
+## Illustrates the use of variables 
+
+# Special variables
+
+echo "This script was called with $# parameters"
+echo "The script's name is $0"
+echo "The arguments are $@"
+echo "The first argument is $1"
+echo "The second argument is $2"
+
+# Assigned Variables; Explicit declaration:
+MY_VAR='some string' 
+echo 'the current value of the variable is:' $MY_VAR
+echo
+echo 'Please enter a new string'
+read MY_VAR
+echo
+echo 'the current value of the variable is:' $MY_VAR
+echo
+
+## Assigned Variables; Reading (multiple values) from user input:
+echo 'Enter two numbers separated by space(s)'
+read a b
+echo
+echo 'you entered' $a 'and' $b '; Their sum is:'
+
+## Assigned Variables; Command substitution
+MY_SUM=$(expr $a + $b)
+echo $MY_SUM
+**********************************************************************
+
+Testing variables.sh...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+This script was called with 0 parameters
+The script's name is variables.sh
+The arguments are 
+The first argument is 
+The second argument is 
+the current value of the variable is: some string
+
+Please enter a new string
+
+the current value of the variable is:
+
+Enter two numbers separated by space(s)
+
+you entered and ; Their sum is:
+
+
+**********************************************************************
+
+Encountered error (or warning):
+
+***IGNORE IF THIS ERROR IS EXPECTED AS PART OF AN IN-CLASS EXERCISE***
+
+expr: syntax error: missing argument after ‘+’
+
+======================================================================
+Inspecting script file FirstExample.tex...
+
+File contents are:
+
+**********************************************************************
+\documentclass[12pt]{article}
+<<<<<<< HEAD
+\title{A Simple Document}
+\author{Your Name}
+\date{}
+\begin{document}
+    \maketitle
+
+    \begin{abstract}
+        Whis papaer analyzes a seminal equation in population biology
+    \end{abstract}
+
+    \section{Introduction}
+        Blah  Blah
+    
+    \section{Materials \& Methods}
+
+    A foundational equation of population biology is:
+
+    \begin{equation}
+        \frac{dN}{dt} =r N (1 - \frac {N}{K})
+    \end{equation}
+
+    It was the first proposed by Verhulst in 1838 \cite{verhulst1833notice}.
+
+    \bibliographystle{plain}
+    \bibliography{FirstBiblio}
+=======
+
+\title{A Simple Document}
+
+\author{Your Name}
+
+\date{}
+
+\begin{document}
+  \maketitle
+  
+  \begin{abstract}
+    This paper analyzes a seminal equation in population biology.
+  \end{abstract}
+  
+  \section{Introduction}
+    Blah Blah
+  
+  \section{Materials \& Methods}
+  
+  A foundational equation of population biology is:
+  
+  \begin{equation}
+    \frac{dN}{dt} = r N (1 - \frac{N}{K})
+  \end{equation}
+  
+  It was first proposed by Verhulst in 1838 \cite{verhulst1838notice}.
+  
+  \bibliographystyle{plain}
+  
+  \bibliography{FirstBiblio}
+>>>>>>> 55303f0 (Initial commit)
+
+\end{document}
+**********************************************************************
+
+Testing FirstExample.tex...
+
+======================================================================
+Inspecting script file boilerplate.sh...
+
+File contents are:
+
+**********************************************************************
+#!/bin/sh 
+#Author: GG Bond@ic.ac.uk
+#Scrip: boilerplate.sh
+#Desc: simple boilerplate for shell script
+
+echo -e "\nThis is a shell script! \n"
+
+#exit
+
+#touch means create a doc, code means open the doc, but bash means run the doc.ls
+
+
+**********************************************************************
+
+Testing boilerplate.sh...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+
+This is a shell script! 
+
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.00356s
+
+======================================================================
+Inspecting script file CompileLaTeX_practicework.sh...
+
+File contents are:
+
+**********************************************************************
+#!/bin/bash
+pdflatex ${1%.*}.tex        ##use {filename%.*} to ignore the useless file's extension
+bibtex ${1%.*}
+pdflatex ${1%.*}.tex
+pdflatex ${1%.*}.tex
+evince ${1%.*}.pdf &
+
+##Clean up
+rm *.aux
+rm *.log
+rm *.bbl
+rm *.blg
+
+##final try to use 'bash CompileLaTeX.sh FirstExample.tex ''
+**********************************************************************
+
+Testing CompileLaTeX_practicework.sh...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(/usr/share/texlive/texmf-dist/tex/latex/tools/.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21> File ignored)
+*
+! Emergency stop.
+<*> .tex
+        
+!  ==> Fatal error occurred, no output PDF file produced!
+Transcript written on .log.
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded 
+**********************************************************************
+
+Encountered error (or warning):
+
+***IGNORE IF THIS ERROR IS EXPECTED AS PART OF AN IN-CLASS EXERCISE***
+
+bibtex: Need exactly one file argument.
+Try `bibtex --help' for more information.
+rm: cannot remove '*.log': No such file or directory
+rm: cannot remove '*.bbl': No such file or directory
+rm: cannot remove '*.blg': No such file or directory
+
+(evince:223014): Handy-WARNING **: 15:18:47.252: Using GtkSettings:gtk-application-prefer-dark-theme together with HdyStyleManager is unsupported. Please use HdyStyleManager:color-scheme instead.
+
+** (evince:223014): WARNING **: 15:18:47.471: Error when getting information for file “/home/mhasoba/Documents/Teaching/IC_CMEE/2022-23/Coursework/StudentRepos/JintaoLU_/week1/code/.pdf”: No such file or directory
+
+** (evince:223014): WARNING **: 15:18:47.472: set_filenames: Error when getting information for file “/home/mhasoba/Documents/Teaching/IC_CMEE/2022-23/Coursework/StudentRepos/JintaoLU_/week1/code/.pdf”: No such file or directory
+
+** (evince:223014): WARNING **: 15:18:47.503: Error setting file metadata: No such file or directory
+
+** (evince:223014): WARNING **: 15:18:47.503: Error setting file metadata: No such file or directory
+
+** (evince:223014): WARNING **: 15:18:47.503: Error setting file metadata: No such file or directory
+
+** (evince:223014): WARNING **: 15:18:47.503: Error setting file metadata: No such file or directory
+
+** (evince:223014): WARNING **: 15:18:47.503: Error setting file metadata: No such file or directory
+
+** (evince:223014): WARNING **: 15:18:47.503: Error setting file metadata: No such file or directory
+
+** (evince:223014): WARNING **: 15:18:47.503: Error setting file metadata: No such file or directory
+
+** (evince:223014): WARNING **: 15:18:47.503: Error setting file metadata: No such file or directory
+
+** (evince:223014): WARNING **: 15:18:47.503: Error setting file metadata: No such file or directory
+
+** (evince:223014): WARNING **: 15:18:47.503: Error setting file metadata: No such file or directory
+
+** (evince:223014): WARNING **: 15:18:47.504: Error setting file metadata: No such file or directory
+
+** (evince:223014): WARNING **: 15:18:47.504: Error setting file metadata: No such file or directory
+
+** (evince:223014): WARNING **: 15:18:47.510: Error setting file metadata: No such file or directory
+
+** (evince:223014): WARNING **: 15:18:47.510: Error setting file metadata: No such file or directory
+
+======================================================================
+Inspecting script file csvtospace.sh...
+
+File contents are:
+
+**********************************************************************
+#!/bin/bash
+#Author :jl8722@ic.ac.uk
+#script: csvtospace.sh
+#Description: subtitute the commas in the files with spaces
+#Save the output into a new txt file
+#Date: Oct 2022
+
+
+echo "there is a comma delimited version of $1"   #mention the goal file
+cat $1 |tr -s "," " " >> ${1%.*}.txt                 # command 'cat' print file on the screen, 'tr -s' transfer all ',' to 'space' , then '>>' store in a 
+echo  "Finish"
+exit
+
+
+**********************************************************************
+
+Testing csvtospace.sh...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+there is a comma delimited version of 
+Finish
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.00424s
+
+======================================================================
+Inspecting script file ConcatenateTwoFiles.sh...
+
+File contents are:
+
+**********************************************************************
+#!/bin/bash
+
+cat $1 >$3
+cat $2 >>$3
+echo "Merged File is"
+cat $3
+
+**********************************************************************
+
+Testing ConcatenateTwoFiles.sh...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+Merged File is
+
+**********************************************************************
+
+Encountered error (or warning):
+
+***IGNORE IF THIS ERROR IS EXPECTED AS PART OF AN IN-CLASS EXERCISE***
+
+ConcatenateTwoFiles.sh: line 3: $3: ambiguous redirect
+ConcatenateTwoFiles.sh: line 4: $3: ambiguous redirect
+
+======================================================================
+Inspecting script file UnixPrac1.txt...
+
+File contents are:
+
+**********************************************************************
+#0 Download the files from remote repositories
+    cd Documents/CMEECourseWork/week1/data  #direct to the route  
+
+    # download files from remote repositories
+    wget https://raw.githubusercontent.com/mhasoba/TheMulQuaBio/master/content/data/fasta/407228326.fasta
+    wget https://raw.githubusercontent.com/mhasoba/TheMulQuaBio/master/content/data/fasta/407228412.fasta
+    wget https://raw.githubusercontent.com/mhasoba/TheMulQuaBio/master/content/data/fasta/E.coli.fasta
+
+
+#1 to scount how many lines there are in each file
+    
+    #create the CountLines.sh scripts 
+    cd Documents/CMEECourseWork/week1/code
+    touch countlines.sh
+    code countlines.sh
+    
+    #create the shell scrtip in the CountLines.sh file
+
+    #!/bin/bash
+    linesnumber= 'wc -l <$1'                     # use commmand 'wc -l' to acount the line numbers of file $1 then store in linesnumber
+    echo " the file $1 has $linesnumber lines"   # fill with results in the strings
+    echo                                      
+    
+    # operate the shell script with bash commmand
+    cd Documents/CMEECourseWork/week1/code
+    bash  CountLines.sh ../data/407228326.fasta
+    bash  CountLines.sh ../data/407228412.fasta
+    bash  CountLines.sh ../data/E.coli.fasta
+
+
+#2 to print everything starting from the second line for the E.coli genome
+
+    cd Documents/CMEECourseWork/week1/data
+    tail -n +2 E.coli.fasta   # command 'tail -n' to print last few lines of a file, +2 means all lines except the first line
+
+
+#3 to count the sequence length of this genome
+
+    cd Documents/CMEECourseWork/week1/data
+    tail -n +2 E.coli.fasta |tr -d '\n' | wc -c   # command 'tail -n +2' to print all the sequence of this genome, 'tr -d '\n'' to delete the line break at the end of each line, 'wc -c' to count number of bytes, use | to set commond from left to right.
+
+
+#4 to count the matches of a particular sequence,  "ATGC"
+
+    cd Documents/CMEECourseWork/week1/data
+    grep -o "ATGC" E.coli.fasta |wc -l  # use command 'grep -o 'to position repeated ATGC in one line, use 'wc -l' to count number
+    
+    
+#5 to compute the AT/GC ratio
+
+
+cd Documents/CMEECourseWork/week1/data
+
+AA=`grep -o "A" E.coli.fasta |wc -l`    # use command 'grep -o 'to position repeated words in one line, use 'wc -l' to count number
+TT=`grep -o 'T' E.coli.fasta |wc -l`    
+GG=`grep -o 'G' E.coli.fasta |wc -l`    
+CC=`grep -o 'C' E.coli.fasta |wc -l`    
+
+AT=$(expr $AA + $TT )   # use command 'expr' to support calculate in the Unix
+echo $AT
+GC=$(expr $GG + $CC )   #
+echo $GC
+
+ratio=$( echo | awk "{print $AT/$GC }" ) # use command 'awk' to support the decimal calculation.
+echo " the ratio is $ratio "
+   
+**********************************************************************
+
+Testing UnixPrac1.txt...
+
+======================================================================
+Inspecting script file CompileLaTeX.sh...
+
+File contents are:
+
+**********************************************************************
+#!/bin/bash
+pdflatex $1.tex
+bibtex $1
+pdflatex $1.tex
+pdflatex $1.tex
+evince $1.pdf &
+
+## Cleanup
+rm *.aux
+rm *.log
+rm *.bbl
+rm *.blg
+
+**********************************************************************
+
+Testing CompileLaTeX.sh...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(/usr/share/texlive/texmf-dist/tex/latex/tools/.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21> File ignored)
+*
+! Emergency stop.
+<*> .tex
+        
+!  ==> Fatal error occurred, no output PDF file produced!
+Transcript written on .log.
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded 
+**********************************************************************
+
+Encountered error (or warning):
+
+***IGNORE IF THIS ERROR IS EXPECTED AS PART OF AN IN-CLASS EXERCISE***
+
+bibtex: Need exactly one file argument.
+Try `bibtex --help' for more information.
+rm: cannot remove '*.aux': No such file or directory
+rm: cannot remove '*.log': No such file or directory
+rm: cannot remove '*.bbl': No such file or directory
+rm: cannot remove '*.blg': No such file or directory
+
+(evince:223077): Handy-WARNING **: 15:18:50.056: Using GtkSettings:gtk-application-prefer-dark-theme together with HdyStyleManager is unsupported. Please use HdyStyleManager:color-scheme instead.
+
+** (evince:223077): WARNING **: 15:18:50.318: Error when getting information for file “/home/mhasoba/Documents/Teaching/IC_CMEE/2022-23/Coursework/StudentRepos/JintaoLU_/week1/code/.pdf”: No such file or directory
+
+** (evince:223077): WARNING **: 15:18:50.318: set_filenames: Error when getting information for file “/home/mhasoba/Documents/Teaching/IC_CMEE/2022-23/Coursework/StudentRepos/JintaoLU_/week1/code/.pdf”: No such file or directory
+
+** (evince:223077): WARNING **: 15:18:50.349: Error setting file metadata: No such file or directory
+
+** (evince:223077): WARNING **: 15:18:50.349: Error setting file metadata: No such file or directory
+
+** (evince:223077): WARNING **: 15:18:50.350: Error setting file metadata: No such file or directory
+
+** (evince:223077): WARNING **: 15:18:50.350: Error setting file metadata: No such file or directory
+
+** (evince:223077): WARNING **: 15:18:50.350: Error setting file metadata: No such file or directory
+
+** (evince:223077): WARNING **: 15:18:50.350: Error setting file metadata: No such file or directory
+
+** (evince:223077): WARNING **: 15:18:50.350: Error setting file metadata: No such file or directory
+
+** (evince:223077): WARNING **: 15:18:50.350: Error setting file metadata: No such file or directory
+
+** (evince:223077): WARNING **: 15:18:50.350: Error setting file metadata: No such file or directory
+
+** (evince:223077): WARNING **: 15:18:50.350: Error setting file metadata: No such file or directory
+
+** (evince:223077): WARNING **: 15:18:50.350: Error setting file metadata: No such file or directory
+
+** (evince:223077): WARNING **: 15:18:50.350: Error setting file metadata: No such file or directory
+
+** (evince:223077): WARNING **: 15:18:50.355: Error setting file metadata: No such file or directory
+
+** (evince:223077): WARNING **: 15:18:50.355: Error setting file metadata: No such file or directory
+
+======================================================================
+Inspecting script file MyExampleScript.sh...
+
+File contents are:
+
+**********************************************************************
+#!/bin/sh
+
+MSG1="Hello"
+MSG2=$USER
+echo "$MSG1 $MSG2"
+echo "Hello $USER"
+echo
+**********************************************************************
+
+Testing MyExampleScript.sh...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+Hello mhasoba
+Hello mhasoba
+
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.00357s
+
+======================================================================
+======================================================================
+Finished running scripts
+
+Ran into 6 errors
+
+======================================================================
+======================================================================
+
+FINISHED WEEKLY ASSESSMENT
+
+Current Points for the Week = 99.5
+
+NOTE THAT THESE ARE POINTS, NOT MARKS FOR THE WEEK!
